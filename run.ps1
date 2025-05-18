@@ -1,9 +1,13 @@
 docker compose run --rm gog `
   --directory /downloads `
-  --repair --download `
+  --download `
   --language pl+en `
   --save-serials `
   --save-game-details-json `
   --save-logo `
   --save-ico `
-  --check-free-space
+  --check-free-space `
+  --threads 4 `
+  --include-hidden-products `
+  --platform all `
+  --create-xml automatic
