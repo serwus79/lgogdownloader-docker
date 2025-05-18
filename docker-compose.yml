@@ -1,0 +1,10 @@
+services:
+  gog:
+    build: .
+    image: lgogdownloader:latest
+    volumes:
+      - ./config:/config
+      - ./downloads:/downloads
+    environment:
+      - XDG_CONFIG_HOME=/config
+    entrypoint: lgogdownloader

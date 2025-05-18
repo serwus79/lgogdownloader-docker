@@ -1,0 +1,15 @@
+#!/bin/bash
+
+docker compose run --rm gog \
+  --directory /downloads \
+  --download \
+  --language pl+en \
+  --save-serials \
+  --save-game-details-json \
+  --save-logo \
+  --save-ico \
+  --check-free-space \
+  --threads 4 \
+  --include-hidden-products \
+  --platform all \
+  --create-xml automatic
