@@ -3,6 +3,7 @@
 docker compose run --rm gog \
   --directory /downloads \
   --download \
+  --new --updated --clear-update-flags --delete-orphans \
   --language pl+en \
   --save-serials \
   --save-game-details-json \
@@ -12,4 +13,5 @@ docker compose run --rm gog \
   --threads 4 \
   --include-hidden-products \
   --platform all \
-  --create-xml automatic
+  --create-xml automatic \
+  --exclude patches

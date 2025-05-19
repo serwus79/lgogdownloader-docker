@@ -4,7 +4,7 @@ services:
     image: lgogdownloader:latest
     volumes:
       - ./config:/config
-      - ./downloads:/downloads
+      - e:\Games\GOG:/downloads
     environment:
       - XDG_CONFIG_HOME=/config
     entrypoint: lgogdownloader
