@@ -30,7 +30,7 @@ Automatyczne pobieranie instalatorów offline z GOG.com przy użyciu `lgogdownlo
 ```
 lgogdownloader-docker/
 ├── Dockerfile
-├── docker-compose.yml
+├── docker-compose.example.yml
 ├── run.sh         # Linux/macOS
 ├── run.ps1        # Windows PowerShell
 ├── config/        # zapis konfiguracji i tokenów
@@ -43,6 +43,8 @@ lgogdownloader-docker/
 ```bash
 docker compose build
 ```
+
+3. Zmień nazwę pliku `docker-compose.example.yml` na `docker-compose.yml` i dostosuj go do swoich potrzeb.
 
 ---
 
